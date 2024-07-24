@@ -1,0 +1,130 @@
+/* Definición de colores usando variables */
+:root {
+    --mint-green: #DCFCF9; /* Verde menta */
+    --fluorescent-cyan: #6AEFEA; /* Cian fluorescente */
+    --verdigris: #54A39E; /* Verdigris */
+    --pomp-and-power: #756A94; /* Pomp and Power */
+    --finn: #6F4577; /* Finn */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente utilizada */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+    background-color: var(--mint-green); /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: var(--finn); /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 20px 0; /* Relleno superior e inferior */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+header h1 {
+    margin: 0; /* Eliminar márgenes del título */
+    font-size: 2.5em; /* Tamaño del texto */
+}
+
+nav ul {
+    list-style: none; /* Eliminar viñetas de la lista */
+    padding: 0; /* Eliminar relleno de la lista */
+    margin: 0; /* Eliminar márgenes de la lista */
+}
+
+nav ul li {
+    display: inline; /* Mostrar los elementos de la lista en línea */
+    margin: 0 15px; /* Espaciado horizontal entre elementos */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px; /* Relleno en las secciones */
+    margin: 20px 0; /* Espaciado vertical entre secciones */
+}
+
+section#inicio {
+    background: linear-gradient(to right, var(--fluorescent-cyan), var(--mint-green)); /* Fondo con degradado */
+    color: #1f043f; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+section#productos {
+    background-color: var(--mint-green); /* Color de fondo */
+    color: var(--verdigris); /* Color del texto */
+}
+
+section#productos h2 {
+    text-align: center; /* Centrar el título */
+    font-size: 2em; /* Tamaño del texto del título */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+section#productos ul li {
+    display: flex; /* Utilizar flexbox para alinear los elementos */
+    align-items: center; /* Alinear verticalmente los elementos */
+    margin-bottom: 20px; /* Espaciado inferior entre elementos */
+}
+
+section#productos img {
+    margin-right: 20px; /* Espaciado a la derecha de las imágenes */
+    max-width: 300px; /* Limitar el tamaño máximo de las imágenes */
+}
+
+section#productos li strong {
+    font-size: 1.5em; /* Tamaño de la fuente para el nombre del producto */
+}
+
+section#productos li p {
+    font-size: 1.3em; /* Tamaño de la fuente para la descripción de las imágenes */
+    margin: 0; /* Eliminar márgenes para una mejor alineación */
+}
+
+section#nosotros {
+    background-color: var(--fluorescent-cyan); /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para la sección de ubicación */
+section#ubicacion {
+    background-color: var(--pomp-and-power); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Relleno en la sección */
+}
+
+.ubicacion-container {
+    display: flex; /* Utilizar flexbox para alinear el contenido */
+    align-items: center; /* Alinear verticalmente el contenido */
+    justify-content: space-between; /* Separar el texto y la imagen */
+}
+
+.ubicacion-texto {
+    flex: 1; /* Permitir que el texto ocupe el espacio disponible */
+}
+
+.ubicacion-imagen img {
+    max-width: 100%; /* Limitar el tamaño máximo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: var(--finn); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+    padding: 10px 0; /* Relleno superior e inferior */
+}
+
+footer p {
+    margin: 0; /* Eliminar márgenes del texto */
+}
